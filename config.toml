@@ -36,11 +36,12 @@ canonifyurls = true
   job = "Data Analyst"
   location = "Colorado"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
-  gravatarEmail = "camerondavidboy@gmail.com"
-  
+  # gravatarEmail = "camerondavidboy@gmail.com"
+
   # Your profile picture
   # Overwritten by your gravatar image if `author.gravatarEmail` is filled
-  picture = "https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png"
+  picture = "https://images.vexels.com/media/users/3/129616/isolated/preview/fb517f8913bd99cd48ef00facb4a67c0-el-hombre-de-negocios-silueta-avatar-by-vexels.png"
+
   # Your Twitter username without the @. E.g : thibaudlepretre
 twitter = "cboyrun"
   # Your google plus profile id. E.g : +ThibaudLepretre or 114625208755123718311
@@ -213,4 +214,4 @@ twitter = "cboyrun"
 
   # Customize copyright value "© 2017 <CUSTOMIZATION>. All Rights Reserved"
   # [params.footer]
-  #   copyright = "<a href=\"https://github.com/kakawait\">kakawait</a>"
+  #   copyright = "<a href=\"https://github.com/cameronboy\">cameronboy</a>"
