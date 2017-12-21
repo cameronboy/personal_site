@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Cameron Boy</title>
+    <link>https://personal-site-ea9f3.firebaseapp.com/categories/</link>
+    <description>Recent content in Categories on Cameron Boy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://personal-site-ea9f3.firebaseapp.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Category</title>
+      <link>https://personal-site-ea9f3.firebaseapp.com/categories/category/</link>
+      <pubDate>Thu, 21 Dec 2017 12:15:52 -0700</pubDate>
+      
+      <guid>https://personal-site-ea9f3.firebaseapp.com/categories/category/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://personal-site-ea9f3.firebaseapp.com/categories/python/</link>
+      <pubDate>Tue, 19 Dec 2017 19:29:42 -0700</pubDate>
+      
+      <guid>https://personal-site-ea9f3.firebaseapp.com/categories/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sklearn</title>
+      <link>https://personal-site-ea9f3.firebaseapp.com/categories/sklearn/</link>
+      <pubDate>Tue, 19 Dec 2017 19:29:42 -0700</pubDate>
+      
+      <guid>https://personal-site-ea9f3.firebaseapp.com/categories/sklearn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Subcategory</title>
+      <link>https://personal-site-ea9f3.firebaseapp.com/categories/subcategory/</link>
+      <pubDate>Thu, 21 Dec 2017 12:15:52 -0700</pubDate>
+      
+      <guid>https://personal-site-ea9f3.firebaseapp.com/categories/subcategory/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
