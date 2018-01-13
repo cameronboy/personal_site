@@ -21,7 +21,7 @@ theme = "tranquilpeak"
 googleAnalytics = "UA-75773019-1"
 paginate = 7
 canonifyurls = true
-
+enableEmoji = true
 [permalinks]
   post = "/:year/:month/:slug/"
 
