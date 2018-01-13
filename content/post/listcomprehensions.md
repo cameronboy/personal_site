@@ -1,6 +1,7 @@
 ---
 title: "List Comprehensions vs Loops"
 date: 2018-01-13T10:54:54-07:00
+draf: false
 categories:
 - Python
 tags:

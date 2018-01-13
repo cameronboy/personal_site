@@ -10,5 +10,14 @@
 	<atom:link href="https:///cameronboy.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Opinion</title>
+      <link>https:///cameronboy.com/categories/opinion/</link>
+      <pubDate>Thu, 21 Dec 2017 12:15:52 -0700</pubDate>
+      
+      <guid>https:///cameronboy.com/categories/opinion/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

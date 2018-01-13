@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https:///cameronboy.com/2017/12/my-take-on-data-scientist-vs.-data-analyst/</loc>
+    <lastmod>2017-12-21T12:15:52-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https:///cameronboy.com/page/contact/</loc>
     <lastmod>2017-12-19T19:18:16-07:00</lastmod>
   </url>
@@ -14,12 +19,36 @@
   
   <url>
     <loc>https:///cameronboy.com/</loc>
-    <lastmod>2017-12-19T19:18:16-07:00</lastmod>
+    <lastmod>2017-12-21T12:15:52-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https:///cameronboy.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https:///cameronboy.com/tags/data/</loc>
+    <lastmod>2017-12-21T12:15:52-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https:///cameronboy.com/tags/data-science/</loc>
+    <lastmod>2017-12-21T12:15:52-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https:///cameronboy.com/categories/opinion/</loc>
+    <lastmod>2017-12-21T12:15:52-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https:///cameronboy.com/tags/opinion/</loc>
+    <lastmod>2017-12-21T12:15:52-07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -30,7 +59,14 @@
   </url>
   
   <url>
+    <loc>https:///cameronboy.com/post/</loc>
+    <lastmod>2017-12-21T12:15:52-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https:///cameronboy.com/tags/</loc>
+    <lastmod>2017-12-21T12:15:52-07:00</lastmod>
     <priority>0</priority>
   </url>
   
