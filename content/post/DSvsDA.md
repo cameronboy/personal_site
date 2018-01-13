@@ -20,7 +20,7 @@ keywords:
 
 <!--more-->
 
-<img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=2104&q=80" alt="Photo2" width="750" height="500">
+<img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=2104&q=80" alt="Photo2">
 
 # What on earth is Data Science..
 
