@@ -38,5 +38,14 @@
       <description></description>
     </item>
     
+    <item>
+      <title>New Stuff!</title>
+      <link>https://personal-site-ea9f3.firebaseapp.com/2017/11/new-stuff/</link>
+      <pubDate>Sun, 19 Nov 2017 19:16:03 -0700</pubDate>
+      
+      <guid>https://personal-site-ea9f3.firebaseapp.com/2017/11/new-stuff/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae vulputate purus. Proin vel purus ut nisi accumsan dignissim. Aliquam vitae iaculis mi. Donec felis ligula, imperdiet in tincidunt vel, sagittis at elit. Sed lectus nibh, tincidunt sed fringilla vitae, dapibus non nisi. Donec eu ligula varius, ultrices neque ut, sagittis neque. Donec quis diam eget lectus lobortis pellentesque sit amet eget leo. Ut maximus neque mauris, congue finibus arcu finibus ac.</description>
+    </item>
+    
   </channel>
 </rss>

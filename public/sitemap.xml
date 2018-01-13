@@ -3,93 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://personal-site-ea9f3.firebaseapp.com/2017/12/newpost/</loc>
-    <lastmod>2017-12-21T12:15:52-07:00</lastmod>
+    <loc>https:///cameronboy.com/page/contact/</loc>
+    <lastmod>2017-12-19T19:18:16-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://personal-site-ea9f3.firebaseapp.com/2017/12/test/</loc>
-    <lastmod>2017-12-19T19:29:42-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://personal-site-ea9f3.firebaseapp.com/2017/12/hello-world/</loc>
-    <lastmod>2017-12-19T19:16:03-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://personal-site-ea9f3.firebaseapp.com/archives/</loc>
+    <loc>https:///cameronboy.com/archives/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://personal-site-ea9f3.firebaseapp.com/</loc>
-    <lastmod>2017-12-21T12:15:52-07:00</lastmod>
+    <loc>https:///cameronboy.com/</loc>
+    <lastmod>2017-12-19T19:18:16-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://personal-site-ea9f3.firebaseapp.com/categories/</loc>
+    <loc>https:///cameronboy.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://personal-site-ea9f3.firebaseapp.com/categories/category/</loc>
-    <lastmod>2017-12-21T12:15:52-07:00</lastmod>
+    <loc>https:///cameronboy.com/page/</loc>
+    <lastmod>2017-12-19T19:18:16-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://personal-site-ea9f3.firebaseapp.com/post/</loc>
-    <lastmod>2017-12-21T12:15:52-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://personal-site-ea9f3.firebaseapp.com/tags/python/</loc>
-    <lastmod>2017-12-19T19:29:42-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://personal-site-ea9f3.firebaseapp.com/categories/python/</loc>
-    <lastmod>2017-12-19T19:29:42-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://personal-site-ea9f3.firebaseapp.com/tags/sklearn/</loc>
-    <lastmod>2017-12-19T19:29:42-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://personal-site-ea9f3.firebaseapp.com/categories/sklearn/</loc>
-    <lastmod>2017-12-19T19:29:42-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://personal-site-ea9f3.firebaseapp.com/categories/subcategory/</loc>
-    <lastmod>2017-12-21T12:15:52-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://personal-site-ea9f3.firebaseapp.com/tags/tag1/</loc>
-    <lastmod>2017-12-21T12:15:52-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://personal-site-ea9f3.firebaseapp.com/tags/tag2/</loc>
-    <lastmod>2017-12-21T12:15:52-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://personal-site-ea9f3.firebaseapp.com/tags/</loc>
-    <lastmod>2017-12-19T19:29:42-07:00</lastmod>
+    <loc>https:///cameronboy.com/tags/</loc>
     <priority>0</priority>
   </url>
   
