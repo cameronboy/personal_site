@@ -62,7 +62,7 @@ Scientist:
 
 The Scientist on the other hand would approach the data from a different perspective. Her/his goal is to utilize the scientific method to extract knowledge about environment the data is representing. A particular attention to feature distributions and data cleanliness is observed and outlier points are identified. Cleaning, can take as much as [80% of the scientists time](https://whatsthebigdata.com/2016/05/01/data-scientists-spend-most-of-their-time-cleaning-data/) and is not a very exciting part of the process; however, one could argue this is where one can develop a more intimate understanding of the data and any processes that create it.
 
-That's the starting point, the vanilla process of sorts. From here, a lot of other [feature engineering](https://en.wikipedia.org/wiki/Feature_engineerings) can take place all in the name of providing better predictability of the dependent variable `y`, or reducing the feature space to lessen the compute resources required.
+That's the starting point, the vanilla process of sorts. From here, a lot of other [feature engineering](https://en.wikipedia.org/wiki/Feature_engineering) can take place all in the name of providing better predictability of the dependent variable `y`, or reducing the feature space to lessen the compute resources required.
 
 
 With the data clean and relevant features selected and or engineered, the model can be trained, [published, and served](https://www.tableau.com/about/blog/2016/11/leverage-power-python-tableau-tabpy-62077) to various analytics projects within the organization.  

@@ -1,5 +1,9 @@
 
 
+  
+    
+  
+
 
   
 
@@ -18,25 +22,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Hugo 0.31.1 with theme Tranquilpeak 0.4.3-BETA">
-    <title>Opinion</title>
+    <title>List Comprehensions vs Loops</title>
     <meta name="author" content="Cameron Boy">
-    <meta name="keywords" content=", data science, python, r">
+    <meta name="keywords" content="tech, data science, python, r">
 
     <link rel="icon" href="https:///cameronboy.com/favicon.png">
     
-      <link rel="alternate" type="application/rss+xml" title="RSS" href="https:///cameronboy.com/categories/opinion/index.xml">
-    
 
     
-    <meta name="description" content="CameronBoy.com">
-    <meta property="og:description" content="CameronBoy.com">
+    <meta name="description" content="">
+    <meta property="og:description" content="">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Opinion">
-    <meta property="og:url" content="/categories/opinion/">
+    <meta property="og:title" content="List Comprehensions vs Loops">
+    <meta property="og:url" content="/2018/01/list-comprehensions-vs-loops/">
     <meta property="og:site_name" content="Cameron Boy">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Cameron Boy">
-    <meta name="twitter:description" content="CameronBoy.com">
+    <meta name="twitter:description" content="">
     
       <meta name="twitter:creator" content="@cboyrun">
     
@@ -83,7 +85,7 @@ ga('send', 'pageview');
 
   <body>
     <div id="blog">
-      <header id="header" data-behavior="1">
+      <header id="header" data-behavior="4">
   <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
   <div class="header-title">
     <a class="header-title-link" href="https:///cameronboy.com/">Cameron Boy</a>
@@ -103,7 +105,7 @@ ga('send', 'pageview');
   
 </header>
 
-      <nav id="sidebar" data-behavior="1">
+      <nav id="sidebar" data-behavior="4">
   <div class="sidebar-container">
     
       <div class="sidebar-profile">
@@ -202,44 +204,26 @@ ga('send', 'pageview');
 </nav>
 
       
-        
 
-      
-      <div id="main" data-behavior="1"
+      <div id="main" data-behavior="4"
         class="
                hasCoverMetaIn
                ">
-        
-          <section class="postShorten-group main-content-wrap">
-            
-            
-              
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
   
-    
-      
-        
-      
-    
+    <h1 class="post-title" itemprop="headline">
+      List Comprehensions vs Loops
+    </h1>
   
-
-
   
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-        <a class="link-unstyled" href="https:///cameronboy.com/2017/12/my-take-on-data-scientist-vs.-data-analyst/">
-          My take on Data Scientist vs. Data Analyst
-        </a>
-      </h1>
-      
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2017-12-21T12:15:52-07:00">
+      <time itemprop="datePublished" datetime="2018-01-13T10:54:54-07:00">
         
-  December 21, 2017
+  January 13, 2018
 
       </time>
     
@@ -248,29 +232,135 @@ ga('send', 'pageview');
   
     <span>in</span>
     
-      <a class="category-link" href="https:///cameronboy.com/categories/opinion">Opinion</a>
+      <a class="category-link" href="https:///cameronboy.com/categories/python">Python</a>
     
   
 
   </div>
 
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      <p></p>
-      <p>
-        <a href="https:///cameronboy.com/2017/12/my-take-on-data-scientist-vs.-data-analyst/" class="postShorten-excerpt_link link">Continue reading</a>
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p></p>
+
+<p>I&rsquo;ve always thought list comprehensions in Python were really nifty. When you need to gather a subset from some list or create a new list and in either case logic is necessary, there&rsquo;s really no other option.</p>
+
+<p>And on top of that, they&rsquo;re dang easy to read. Take a simple routine to grab the even numbers 0-99999:</p>
+
+<pre><code class="language-python">evens = [x for x in range(100000) if x % 2 == 0]
+</code></pre>
+
+<p>One line, and it looks so sublime 👍. Compare that to the loop variant doing the same thing:</p>
+
+<pre><code class="language-python">evens = list()
+for x in range(100000):
+    if x % 2 == 0:
+        evens.append(x)
+</code></pre>
+
+<p>eesh.. 👎</p>
+
+<p>It&rsquo;s still functional, works quite well and for those coming from other languages this may be the route taken.</p>
+
+<h2 id="performance">Performance</h2>
+
+<p>On top of looking a lot nicer and consuming three less lines of code, it is also faster  I am told. I did some <em>crude</em> (Don&rsquo;t judge) tests that are in no way scientific. I just wanted to play around with the <code>%%timeit</code> <a href="http://ipython.readthedocs.io/en/stable/interactive/magics.html">jupter cell magic</a> command to see difference 😉. For a more comprehensive comparison between loops and comprehensions (and map), I would take a look at <a href="http://ipython.readthedocs.io/en/stable/interactive/magics.html">this post</a>.</p>
+
+<p>The list comprehension was indeed faster. This operation took on average 6.7 milliseconds to complete with about two thirds of the tests coming between 6.6 - 6.9 milliseconds.</p>
+
+<p>The loop on the other hand was on average ~50% slower: 9.8ms per operation with two thirds of its tests coming between 9.4ms- 10ms</p>
+
+<p>We&rsquo;re looking at super quick times for this simple operation, but when scaled up in complexity the list comprehensions will typically run faster and will be faster to comprehend for us, the human trying to read it.</p>
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https:///cameronboy.com/tags/python/">python</a>
+
+  <a class="tag tag--primary tag--small" href="https:///cameronboy.com/tags/list-comprehension/">list comprehension</a>
+
+  <a class="tag tag--primary tag--small" href="https:///cameronboy.com/tags/for-loop/">for loop</a>
+
+                  </div>
+                
+              
+            
+            
+  <div class="post-actions-wrap">
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https:///cameronboy.com/2017/12/my-take-on-data-scientist-vs.-data-analyst/" data-tooltip="My take on Data Scientist vs. Data Analyst">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
         
-      </p>
-    </div>
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https:///cameronboy.com/2018/01/list-comprehensions-vs-loops/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https:///cameronboy.com/2018/01/list-comprehensions-vs-loops/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https:///cameronboy.com/2018/01/list-comprehensions-vs-loops/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
   </div>
-  
-</article>
+
 
             
+              
             
-
-          </section>
-        
+          </div>
+        </article>
         <footer id="footer" class="main-content-wrap">
   <span class="copyrights">
     &copy; 2018 Cameron Boy. All Rights Reserved
@@ -278,6 +368,96 @@ ga('send', 'pageview');
 </footer>
 
       </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        
+  <div class="post-actions-wrap">
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https:///cameronboy.com/2017/12/my-take-on-data-scientist-vs.-data-analyst/" data-tooltip="My take on Data Scientist vs. Data Analyst">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https:///cameronboy.com/2018/01/list-comprehensions-vs-loops/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https:///cameronboy.com/2018/01/list-comprehensions-vs-loops/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https:///cameronboy.com/2018/01/list-comprehensions-vs-loops/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2F%2Fcameronboy.com%2F2018%2F01%2Flist-comprehensions-vs-loops%2F">
+          <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2F%2Fcameronboy.com%2F2018%2F01%2Flist-comprehensions-vs-loops%2F">
+          <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2F%2Fcameronboy.com%2F2018%2F01%2Flist-comprehensions-vs-loops%2F">
+          <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
     </div>
     
     <div id="about">
@@ -405,6 +585,10 @@ $(document).ready(function() {
 });
 </script>
 
+
+  
+    
+  
 
 
 
