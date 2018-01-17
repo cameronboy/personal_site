@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https:///cameronboy.com/2018/01/macroeconomic-indicators/</loc>
+    <lastmod>2018-01-17T01:04:49+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https:///cameronboy.com/2018/01/list-comprehensions-vs-loops/</loc>
     <lastmod>2018-01-13T10:54:54-07:00</lastmod>
   </url>
@@ -24,7 +29,7 @@
   
   <url>
     <loc>https:///cameronboy.com/</loc>
-    <lastmod>2018-01-13T10:54:54-07:00</lastmod>
+    <lastmod>2018-01-17T01:04:49+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -36,6 +41,12 @@
   <url>
     <loc>https:///cameronboy.com/tags/data/</loc>
     <lastmod>2017-12-21T12:15:52-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https:///cameronboy.com/categories/data/</loc>
+    <lastmod>2018-01-17T01:04:49+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -52,8 +63,20 @@
   </url>
   
   <url>
+    <loc>https:///cameronboy.com/tags/jupyter-notebook/</loc>
+    <lastmod>2018-01-17T01:04:49+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https:///cameronboy.com/tags/list-comprehension/</loc>
     <lastmod>2018-01-13T10:54:54-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https:///cameronboy.com/tags/matplotlib/</loc>
+    <lastmod>2018-01-17T01:04:49+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -76,20 +99,26 @@
   </url>
   
   <url>
+    <loc>https:///cameronboy.com/tags/pandas/</loc>
+    <lastmod>2018-01-17T01:04:49+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https:///cameronboy.com/post/</loc>
-    <lastmod>2018-01-13T10:54:54-07:00</lastmod>
+    <lastmod>2018-01-17T01:04:49+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https:///cameronboy.com/tags/python/</loc>
-    <lastmod>2018-01-13T10:54:54-07:00</lastmod>
+    <lastmod>2018-01-17T01:04:49+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https:///cameronboy.com/categories/python/</loc>
-    <lastmod>2018-01-13T10:54:54-07:00</lastmod>
+    <lastmod>2018-01-17T01:04:49+00:00</lastmod>
     <priority>0</priority>
   </url>
   
