@@ -75,9 +75,6 @@
   </url>
   
   <url>
-<<<<<<< HEAD
-    <loc>https:///cameronboy.com/categories/opinion/</loc>
-=======
     <loc>https:///cameronboy.com/tags/matplotlib/</loc>
     <lastmod>2018-01-17T01:04:49+00:00</lastmod>
     <priority>0</priority>
@@ -85,13 +82,12 @@
   
   <url>
     <loc>https:///cameronboy.com/tags/opinion/</loc>
->>>>>>> abee8f1ad5551813f706ce719b574514d2aa859a
     <lastmod>2017-12-21T12:15:52-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https:///cameronboy.com/tags/opinion/</loc>
+    <loc>https:///cameronboy.com/categories/opinion/</loc>
     <lastmod>2017-12-21T12:15:52-07:00</lastmod>
     <priority>0</priority>
   </url>
@@ -115,24 +111,14 @@
   </url>
   
   <url>
-<<<<<<< HEAD
-    <loc>https:///cameronboy.com/categories/python/</loc>
-    <lastmod>2018-01-13T10:54:54-07:00</lastmod>
-=======
     <loc>https:///cameronboy.com/tags/python/</loc>
     <lastmod>2018-01-17T01:04:49+00:00</lastmod>
->>>>>>> abee8f1ad5551813f706ce719b574514d2aa859a
     <priority>0</priority>
   </url>
   
   <url>
-<<<<<<< HEAD
-    <loc>https:///cameronboy.com/tags/python/</loc>
-    <lastmod>2018-01-13T10:54:54-07:00</lastmod>
-=======
     <loc>https:///cameronboy.com/categories/python/</loc>
     <lastmod>2018-01-17T01:04:49+00:00</lastmod>
->>>>>>> abee8f1ad5551813f706ce719b574514d2aa859a
     <priority>0</priority>
   </url>
   

@@ -301,9 +301,75 @@ from scipy.signal import savgol_filter # a smoothing filter I currently like
 
 <p>From here we can get our first data series! The examples grab the S&amp;P500 index for the last several years so let&rsquo;s confirm we <em>really</em> have everything setup and working correctly:</p>
 
+<hr />
+
 <p><code>fred.get_series('sp500').plot()</code></p>
 
-<p><img src="sp500.png" alt="first_fphoto" /></p>
+<p><img src="https:///cameronboy.com/images/fredapi/sp500.png" alt="SP&amp;500" /></p>
+
+<hr />
+
+<p>Woo! It works, we&rsquo;ve got the S&amp;P500 index data coming in as a pandas series. Let&rsquo;s take a look at the other series we can bring in. I&rsquo;m interested in those indicators based on housing. I wonder how many I&rsquo;ve got available:</p>
+
+<hr />
+
+<pre><code class="language-python">housing_series = fred.search('housing')['title'].values
+len(housing_series)
+</code></pre>
+
+<p><img src="https:///cameronboy.com/images/fredapi/records.png" alt="search" /></p>
+
+<hr />
+
+<p>That seems interesting, 1000 results on the nose. Let&rsquo;s look at the <code>search</code> method and see if there&rsquo;s some sort of cap. Sure enough in the <a href="https://github.com/mortada/fredapi/blob/master/fredapi/fred.py"><code>fred.py</code></a> source code there&rsquo;s a limit argument which has a default value of 1000. I&rsquo;m not going to dig further, 1K is enough to realize there&rsquo;s a lot of housing specific macroeconomic indicators I have at my disposal! So let&rsquo;s do something with them.</p>
+
+<p>I just want to grab one series and graph it. Let&rsquo;s do <a href="https://fred.stlouisfed.org/series/HOUST">housing starts</a> for example.</p>
+
+<p>First we&rsquo;ll fetch the appropriate data using the &lsquo;HOUST&rsquo; series_id:</p>
+
+<hr />
+
+<pre><code class="language-python">housing_starts = fred.get_series('HOUST')
+smoothed_starts = pd.Series(savgol_filter(housing_starts, 33, 4))
+
+print(housing_starts.shape)
+print(smoothed_starts.shape)
+</code></pre>
+
+<p><img src="https:///cameronboy.com/images/fredapi/series_length.PNG" alt="series_length" /></p>
+
+<p>707 Months worth of data here, let&rsquo;s plot it. I&rsquo;ve recently come across a smoothing function, rather filter, I like that abstracts some volitility and noise away from time-series to get a better picture of the trends. The <code>savgol_filter</code> from  <code>scipy.signal</code> does a pretty good job.</p>
+
+<pre><code class="language-Python"># Plot the Housing Start Data
+plt.figure(figsize=(20,10))
+plt.style.use('fivethirtyeight')
+
+plt.plot(housing_starts.values, label=&quot;Housing Starts&quot;)
+plt.plot(smoothed_starts.values, label=&quot;Smoothed&quot;, color='#ff21ff')
+
+plt.title(&quot;Housing Starts: Total: New Privately Owned Housing Units Started (HOUST)&quot;)
+plt.ylabel(&quot;Housing Starts in thousands&quot;)
+plt.legend()
+plt.xlabel(&quot;Date index from Jan-1959&quot;) # Still getting matplotlib figured out..
+
+plt.show()
+</code></pre>
+
+<p><img src="https:///cameronboy.com/images/fredapi/final_graph.png" alt="final_graph" /></p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>I quite like the looks of that 😃. From my end that&rsquo;s the nicest matplotlib plot I have put together&ndash;I&rsquo;m proud of that.</p>
+
+<p>My end goal here was to provide another source of data to add to your toolset. We&rsquo;ve been able to hook up to <code>fredapi</code> and (<strong>buzzword warning</strong>) get macroeconomic data to supplement our analyses/intelligent agents to facilitate a holistic representation of our environment from data!</p>
+
+<blockquote>
+<p>Now, this assumes the macroeconomic scale correlates in some way with the problem you&rsquo;re trying to solve. Further analysis is needed to ensure these data improve predictions/analyses in some way for you!</p>
+</blockquote>
+
+<p>I am certain there are improvements that could be made. Eagle-eyed readers will have realized the x-axis is simply an index and not of date, for example. Also, there could be improvements with embedding code inputs/outputs that I&rsquo;ll work on going forward. We&rsquo;re all learning, just at different stages of the process!</p>
+
+<h3 id="i-d-love-to-hear-your-thoughts-really-improvements-things-did-well-avenues-to-check-out-in-the-future-etc-leave-them-below-or-reach-out-on-twitter-i-m-at-cboyrun-https-twitter-com-cboyrun">I&rsquo;d love to hear your thoughts, really. Improvements, things did well, avenues to check out in the future etc. Leave them below or reach out on twitter, I&rsquo;m at <a href="https://twitter.com/cboyrun">cboyrun</a>!</h3>
               
             </div>
           </div>
