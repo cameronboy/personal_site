@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Cameron Boy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 13 Jan 2018 10:54:54 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jan 2018 01:04:49 +0000</lastBuildDate>
     
 	<atom:link href="https:///cameronboy.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Macroeconomic Indicators</title>
+      <link>https:///cameronboy.com/2018/01/macroeconomic-indicators/</link>
+      <pubDate>Wed, 17 Jan 2018 01:04:49 +0000</pubDate>
+      
+      <guid>https:///cameronboy.com/2018/01/macroeconomic-indicators/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>List Comprehensions vs Loops</title>
