@@ -3,8 +3,7 @@ title: Macroeconomic Indicators
 date: 2018-01-17T01:04:49.000Z
 draft: false
 categories:
-  - Data
-  - python
+  - General
 tags:
   - python
   - jupyter notebook
